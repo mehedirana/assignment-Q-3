@@ -13,9 +13,6 @@ function fightCorona() {
 function execute() {
     wearPPE().then(result => {console.log(result)
     return fightCorona() 
-    }).then(data => console.log(data))
-    //fightCorona().then(result => console.log(result));
+    }).then(data => console.log(data)).catch(err=> console.log(err))
 }
-
-
 execute();
